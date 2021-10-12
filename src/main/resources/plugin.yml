@@ -1,0 +1,16 @@
+name: GeoIP
+author: swaro32
+main: me.swaro32.Main
+version: 1.0
+api-version: 1.17
+commands:
+  geoip:
+    permission: geoip.usage
+    aliases: ["geo","ip"]
+  geoipinfo:
+    permission: geoip.knowledge
+permissions:
+  geoip.usage:
+    default: op
+  geoip.knowledge:
+    default: true
