@@ -96,12 +96,10 @@ public class GeoIP implements CommandExecutor {
                 usingProxyString = "§4§lYes";
             }
 
-            String offsetPlusOrMinus = "";
+            String offsetPlus = "";
 
             if ( ip_info.offset > 0 ) {
-                offsetPlusOrMinus = "+";
-            } else if ( ip_info.offset < 0 ) {
-                offsetPlusOrMinus = "-";
+                offsetPlus = "+";
             }
 
             sender.sendMessage("§aIP: §f"+ip_inet.getHostAddress()+
@@ -110,7 +108,7 @@ public class GeoIP implements CommandExecutor {
                     "\n§aRegion: §f"+ip_info.regionName+
                     "\n§aCity: §f"+ip_info.city+
                     "\n§aTime zone: §f"+ip_info.timezone+
-                    "\n§aTime offset: §f"+offsetPlusOrMinus+ip_info.offset / 60 / 60+" §ahours"+
+                    "\n§aTime offset: §f"+offsetPlus+ip_info.offset / 60 / 60+" §ahours"+
                     "\n§aCurrent time: §f"+currentTime+
                     "\n§aUsing proxy: §f"+usingProxyString);
 
