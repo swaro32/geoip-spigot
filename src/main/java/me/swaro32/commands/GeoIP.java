@@ -115,7 +115,7 @@ public class GeoIP implements CommandExecutor {
                     "\n§aUsing proxy: §f"+usingProxyString);
 
         } else {
-            sender.sendMessage("§aUsage: §f/geoip §b(nickname) §aor §f/geoip §b(ip) -ip");
+            sender.sendMessage("§aUsage: §f/geoip §b(nickname) §aor §f/geoip §b(ip) §f-ip");
             return false;
         }
 
